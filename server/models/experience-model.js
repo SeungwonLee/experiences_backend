@@ -5,8 +5,8 @@ const ExperienceSchema = new Schema({
   title: { type: String, required: true },
   sub_title: { type: String, required: true },
   description: { type: String },
-  start_date: { type: Date, default: Date.now },
-  end_date: { type: Date, default: Date.now }
+  start_time: { type: String },
+  end_time: { type: String }
 });
 
 module.exports = mongoose.model('experience', ExperienceSchema);
